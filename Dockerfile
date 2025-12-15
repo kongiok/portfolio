@@ -43,4 +43,4 @@ FROM caddy:alpine AS runtime
 COPY --from=builder /opt/kongiok/portfolio/dist /srv/
 COPY Caddyfile /etc/caddy/Caddyfile
 
-EXPOSE 80
+EXPOSE 8080
